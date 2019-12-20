@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.search-container {
+    text-align: center;
+}
+
+body {
+    background-color: slategrey;
+    text-align: center;
+    width: 100%;
+}
+
+.main-weather-container {
+    width: 100%;
+    text-align: center;
+}
+
+.weather-container {
+    margin: 30px auto;
+    padding-top: 10px;
+    border: 3px solid black;
+    width: 220px;
+    height: 250px;
+    display: inline-block;
+
+}
+
+.future-weather-container {
+    border: 3px solid black;
+    display: inline-block;
+    margin: 30px 15px;
+    padding-top: 10px;
+    border: 3px solid black;
+    width: 220px;
+    height: 220px;
+    text-align: center;
+}
+
+.future-main-container {
+    display: inline-block;
+}
