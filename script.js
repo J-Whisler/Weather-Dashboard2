@@ -23,7 +23,7 @@ function getSearchMethod(searchTerm) {
 
 function searchWeather (searchTerm) {
     getSearchMethod(searchTerm);
-    fetch(`http://api.openweathermap.org/data/2.5/weather?${searchMethod}=${searchTerm}&APPID=${apiId}&units=${measurements}`).then(result => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?${searchMethod}=${searchTerm}&APPID=${apiId}&units=${measurements}`).then(result => {
         return result.json()
     }).then(result => {
         Init(result)
@@ -32,7 +32,7 @@ function searchWeather (searchTerm) {
 
 function fiveDayWeather (searchTerm) {
     getSearchMethod(searchTerm)
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?${searchMethod}=${searchTerm}&APPID=${apiId}&units=${measurements}`).then(result => {
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?${searchMethod}=${searchTerm}&APPID=${apiId}&units=${measurements}`).then(result => {
         return result.json()
     }).then(result => {
         fiveDayInit(result)
